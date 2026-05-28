@@ -1,0 +1,309 @@
+{
+  "documentos": [
+    {
+      "id": "doc-certificado-analitico",
+      "tipo_documento": "Certificado Analítico",
+      "es_requerido": true
+    },
+    {
+      "id": "doc-certificado-analitico-pe",
+      "tipo_documento": "Certificado Analítico",
+      "id_pais": "PE",
+      "es_requerido": true
+    },
+    {
+      "id": "doc-titulo-secundario",
+      "tipo_documento": "Título Secundario",
+      "es_requerido": true
+    },
+    {
+      "id": "doc-programa-estudios",
+      "tipo_documento": "Programa de Estudios",
+      "es_requerido": false
+    },
+    {
+      "id": "doc-titulo-secundario-ar",
+      "tipo_documento": "Título Secundario",
+      "id_pais": "AR",
+      "es_requerido": true
+    },
+    {
+      "id": "doc-titulo-secundario-ar-ba",
+      "tipo_documento": "Título Secundario",
+      "id_pais": "AR",
+      "id_provincia": "BA",
+      "es_requerido": true
+    },
+    {
+      "id": "doc-titulo-secundario-ar-ba-laplata",
+      "tipo_documento": "Título Secundario",
+      "id_pais": "AR",
+      "id_provincia": "BA",
+      "id_estado": "La Plata",
+      "es_requerido": true
+    }
+  ],
+  "validos": [
+    {
+      "id": "val-ca-firma",
+      "id_documento": "doc-certificado-analitico",
+      "nombre_validacion": "Tiene firma",
+      "descripcion_validacion": "El documento debe tener firma original o digital del responsable académico.",
+      "es_obligatorio": true
+    },
+    {
+      "id": "val-ca-espanol",
+      "id_documento": "doc-certificado-analitico",
+      "nombre_validacion": "Está en español",
+      "descripcion_validacion": "Si no está en español, debe adjuntarse traducción jurada.",
+      "es_obligatorio": true
+    },
+    {
+      "id": "val-capE-firma",
+      "id_documento": "doc-certificado-analitico-pe",
+      "nombre_validacion": "Tiene firma",
+      "descripcion_validacion": "El documento debe tener firma original o digital del responsable académico peruano.",
+      "es_obligatorio": true
+    },
+    {
+      "id": "val-capE-espanol",
+      "id_documento": "doc-certificado-analitico-pe",
+      "nombre_validacion": "Está en español o con traducción jurada",
+      "descripcion_validacion": "Documentos peruanos suelen estar en español; si no, traducción jurada al español.",
+      "es_obligatorio": true
+    },
+    {
+      "id": "val-capE-apostilla",
+      "id_documento": "doc-certificado-analitico-pe",
+      "nombre_validacion": "Apostilla de La Haya",
+      "descripcion_validacion": "El documento debe contar con apostilla emitida por la autoridad peruana competente.",
+      "es_obligatorio": true
+    },
+    {
+      "id": "val-ts-firma",
+      "id_documento": "doc-titulo-secundario",
+      "nombre_validacion": "Tiene firma",
+      "descripcion_validacion": "Firma del director o autoridad académica equivalente.",
+      "es_obligatorio": true
+    },
+    {
+      "id": "val-ts-membrete",
+      "id_documento": "doc-titulo-secundario",
+      "nombre_validacion": "Membrete oficial de la institución",
+      "descripcion_validacion": "Encabezado o sello de la institución emisora visible y legible.",
+      "es_obligatorio": true
+    },
+    {
+      "id": "val-pe-detalle-asig",
+      "id_documento": "doc-programa-estudios",
+      "nombre_validacion": "Detalle de asignaturas con carga horaria",
+      "descripcion_validacion": "El programa debe listar las asignaturas con sus horas totales.",
+      "es_obligatorio": true
+    },
+    {
+      "id": "val-ts-ar-firma",
+      "id_documento": "doc-titulo-secundario-ar",
+      "nombre_validacion": "Tiene firma",
+      "descripcion_validacion": "Firma del director o autoridad académica equivalente.",
+      "es_obligatorio": true
+    },
+    {
+      "id": "val-ts-ar-membrete",
+      "id_documento": "doc-titulo-secundario-ar",
+      "nombre_validacion": "Membrete oficial de la institución",
+      "descripcion_validacion": "Encabezado o sello de la institución emisora visible y legible.",
+      "es_obligatorio": true
+    },
+    {
+      "id": "val-ts-ar-constancia",
+      "id_documento": "doc-titulo-secundario-ar",
+      "nombre_validacion": "Constancia de finalización de nivel",
+      "descripcion_validacion": "Documento complementario que acredita finalización del nivel medio según normativa nacional.",
+      "es_obligatorio": true
+    },
+    {
+      "id": "val-ts-ar-ba-firma",
+      "id_documento": "doc-titulo-secundario-ar-ba",
+      "nombre_validacion": "Tiene firma",
+      "descripcion_validacion": "Firma del director o autoridad académica equivalente.",
+      "es_obligatorio": true
+    },
+    {
+      "id": "val-ts-ar-ba-membrete",
+      "id_documento": "doc-titulo-secundario-ar-ba",
+      "nombre_validacion": "Membrete oficial de la institución",
+      "descripcion_validacion": "Encabezado o sello de la institución emisora visible y legible.",
+      "es_obligatorio": true
+    },
+    {
+      "id": "val-ts-ar-ba-constancia",
+      "id_documento": "doc-titulo-secundario-ar-ba",
+      "nombre_validacion": "Constancia de finalización de nivel",
+      "descripcion_validacion": "Documento complementario que acredita finalización del nivel medio.",
+      "es_obligatorio": true
+    },
+    {
+      "id": "val-ts-ar-ba-resolucion",
+      "id_documento": "doc-titulo-secundario-ar-ba",
+      "nombre_validacion": "Resolución DGE visible",
+      "descripcion_validacion": "Debe figurar la resolución de la Dirección General de Escuelas de la provincia de Buenos Aires.",
+      "es_obligatorio": true
+    },
+    {
+      "id": "val-ts-ar-ba-lp-firma",
+      "id_documento": "doc-titulo-secundario-ar-ba-laplata",
+      "nombre_validacion": "Tiene firma",
+      "descripcion_validacion": "Firma del director o autoridad académica equivalente.",
+      "es_obligatorio": true
+    },
+    {
+      "id": "val-ts-ar-ba-lp-membrete",
+      "id_documento": "doc-titulo-secundario-ar-ba-laplata",
+      "nombre_validacion": "Membrete oficial de la institución",
+      "descripcion_validacion": "Encabezado o sello de la institución emisora visible y legible.",
+      "es_obligatorio": true
+    },
+    {
+      "id": "val-ts-ar-ba-lp-constancia",
+      "id_documento": "doc-titulo-secundario-ar-ba-laplata",
+      "nombre_validacion": "Constancia de finalización de nivel",
+      "descripcion_validacion": "Documento complementario que acredita finalización del nivel medio.",
+      "es_obligatorio": true
+    },
+    {
+      "id": "val-ts-ar-ba-lp-resolucion",
+      "id_documento": "doc-titulo-secundario-ar-ba-laplata",
+      "nombre_validacion": "Resolución DGE visible",
+      "descripcion_validacion": "Debe figurar la resolución de la DGE de la provincia de Buenos Aires.",
+      "es_obligatorio": true
+    },
+    {
+      "id": "val-ts-ar-ba-lp-sello",
+      "id_documento": "doc-titulo-secundario-ar-ba-laplata",
+      "nombre_validacion": "Sello del Consejo Escolar de La Plata",
+      "descripcion_validacion": "Debe llevar sello visible del Consejo Escolar de La Plata.",
+      "es_obligatorio": true
+    }
+  ],
+  "datos": [
+    {
+      "id": "dat-ca-pais",
+      "id_documento": "doc-certificado-analitico",
+      "tipo_dato": "string",
+      "nombre_dato": "pais_procedencia",
+      "es_obligatorio": true
+    },
+    {
+      "id": "dat-ca-fecha-titulo",
+      "id_documento": "doc-certificado-analitico",
+      "tipo_dato": "date",
+      "nombre_dato": "fecha_titulo",
+      "es_obligatorio": false
+    },
+    {
+      "id": "dat-capE-pais",
+      "id_documento": "doc-certificado-analitico-pe",
+      "tipo_dato": "string",
+      "nombre_dato": "pais_procedencia",
+      "es_obligatorio": true
+    },
+    {
+      "id": "dat-capE-fecha-titulo",
+      "id_documento": "doc-certificado-analitico-pe",
+      "tipo_dato": "date",
+      "nombre_dato": "fecha_titulo",
+      "es_obligatorio": false
+    },
+    {
+      "id": "dat-capE-reniec",
+      "id_documento": "doc-certificado-analitico-pe",
+      "tipo_dato": "bool",
+      "nombre_dato": "legalizacion_RENIEC",
+      "es_obligatorio": true
+    },
+    {
+      "id": "dat-ts-fecha-egreso",
+      "id_documento": "doc-titulo-secundario",
+      "tipo_dato": "date",
+      "nombre_dato": "fecha_egreso",
+      "es_obligatorio": true
+    },
+    {
+      "id": "dat-ts-promedio",
+      "id_documento": "doc-titulo-secundario",
+      "tipo_dato": "number",
+      "nombre_dato": "promedio_general",
+      "es_obligatorio": false
+    },
+    {
+      "id": "dat-pe-anios",
+      "id_documento": "doc-programa-estudios",
+      "tipo_dato": "number",
+      "nombre_dato": "duracion_anios",
+      "es_obligatorio": true
+    },
+    {
+      "id": "dat-ts-ar-fecha-egreso",
+      "id_documento": "doc-titulo-secundario-ar",
+      "tipo_dato": "date",
+      "nombre_dato": "fecha_egreso",
+      "es_obligatorio": true
+    },
+    {
+      "id": "dat-ts-ar-promedio",
+      "id_documento": "doc-titulo-secundario-ar",
+      "tipo_dato": "number",
+      "nombre_dato": "promedio_general",
+      "es_obligatorio": false
+    },
+    {
+      "id": "dat-ts-ar-ba-fecha-egreso",
+      "id_documento": "doc-titulo-secundario-ar-ba",
+      "tipo_dato": "date",
+      "nombre_dato": "fecha_egreso",
+      "es_obligatorio": true
+    },
+    {
+      "id": "dat-ts-ar-ba-promedio",
+      "id_documento": "doc-titulo-secundario-ar-ba",
+      "tipo_dato": "number",
+      "nombre_dato": "promedio_general",
+      "es_obligatorio": false
+    },
+    {
+      "id": "dat-ts-ar-ba-resolucion",
+      "id_documento": "doc-titulo-secundario-ar-ba",
+      "tipo_dato": "string",
+      "nombre_dato": "numero_resolucion_DGE",
+      "es_obligatorio": true
+    },
+    {
+      "id": "dat-ts-ar-ba-lp-fecha-egreso",
+      "id_documento": "doc-titulo-secundario-ar-ba-laplata",
+      "tipo_dato": "date",
+      "nombre_dato": "fecha_egreso",
+      "es_obligatorio": true
+    },
+    {
+      "id": "dat-ts-ar-ba-lp-promedio",
+      "id_documento": "doc-titulo-secundario-ar-ba-laplata",
+      "tipo_dato": "number",
+      "nombre_dato": "promedio_general",
+      "es_obligatorio": false
+    },
+    {
+      "id": "dat-ts-ar-ba-lp-resolucion",
+      "id_documento": "doc-titulo-secundario-ar-ba-laplata",
+      "tipo_dato": "string",
+      "nombre_dato": "numero_resolucion_DGE",
+      "es_obligatorio": true
+    },
+    {
+      "id": "dat-ts-ar-ba-lp-consejo",
+      "id_documento": "doc-titulo-secundario-ar-ba-laplata",
+      "tipo_dato": "string",
+      "nombre_dato": "codigo_consejo_escolar",
+      "es_obligatorio": true
+    }
+  ]
+}
